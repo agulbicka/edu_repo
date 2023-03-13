@@ -2,7 +2,7 @@
 'Learning git'
 
 'turn Q into Phred+33 ASCII-encoded quality'
-def QtoPhred33(Q):
+def Qto_Phred33(Q):
     return chr(Q+33)
 
 'turn Phred+33 ASCII-encoded quality into Q'
