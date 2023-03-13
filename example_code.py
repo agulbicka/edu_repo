@@ -1,4 +1,5 @@
 'This is my example python code'
+'Learning git'
 
 'turn Q into Phred+33 ASCII-encoded quality'
 def QtoPhred33(Q):
