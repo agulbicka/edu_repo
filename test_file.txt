@@ -1,2 +1,4 @@
 This is the first line of my test file.
+Added an extra line.
 This is a change added to the file
+
