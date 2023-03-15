@@ -1,4 +1,2 @@
-This is my test file
-
+This is the first line of my test file.
 This is a change added to the file
-Jelena add some changes
