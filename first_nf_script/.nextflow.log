@@ -1,0 +1,44 @@
+Apr-06 16:01:16.525 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test_script_agu.nf
+Apr-06 16:01:16.678 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Apr-06 16:01:16.707 [main] INFO  nextflow.cli.CmdRun - Launching `test_script_agu.nf` [elegant_cori] - revision: 53158d0533
+Apr-06 16:01:16.918 [main] DEBUG nextflow.Session - Session uuid: 234e6de6-8723-4441-9e29-ff7af3b62354
+Apr-06 16:01:16.919 [main] DEBUG nextflow.Session - Run name: elegant_cori
+Apr-06 16:01:16.923 [main] DEBUG nextflow.Session - Executor pool size: 8
+Apr-06 16:01:16.995 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (15:14 BST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 11.0.18+10-post-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2738@LT-AGULBICKA [127.0.1.1]
+  CPUs: 8 - Mem: 12.4 GB (2.9 GB) - Swap: 4 GB (4 GB)
+Apr-06 16:01:17.069 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/aleksandra.gulbicka/BioX/nextflow_practice/test_script/first_nf_script/first_nf_script/edu_repo/first_nf_script/work [v9fs]
+Apr-06 16:01:17.070 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/Users/aleksandra.gulbicka/BioX/nextflow_practice/test_script/first_nf_script/first_nf_script/edu_repo/first_nf_script/bin
+Apr-06 16:01:17.167 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Apr-06 16:01:17.173 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-06 16:01:17.520 [main] DEBUG nextflow.Session - Session start invoked
+Apr-06 16:01:18.892 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-06 16:01:19.043 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: COUNT_READS, COUNT_LINES
+Apr-06 16:01:19.159 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-06 16:01:19.160 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-06 16:01:19.172 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-06 16:01:19.185 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=12.4 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Apr-06 16:01:19.447 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-06 16:01:19.448 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-06 16:01:19.460 [main] DEBUG nextflow.Session - Ignite dataflow network (3)
+Apr-06 16:01:19.471 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COUNT_LINES
+Apr-06 16:01:19.473 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COUNT_READS
+Apr-06 16:01:19.477 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Apr-06 16:01:19.477 [main] DEBUG nextflow.Session - Session await
+Apr-06 16:01:19.829 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-06 16:01:19.843 [Task submitter] INFO  nextflow.Session - [82/7b11d3] Submitted process > COUNT_LINES (1)
+Apr-06 16:01:19.956 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: COUNT_LINES (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/aleksandra.gulbicka/BioX/nextflow_practice/test_script/first_nf_script/first_nf_script/edu_repo/first_nf_script/work/82/7b11d3482bbf6e95b60461d75aafb0]
+Apr-06 16:01:20.166 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-06 16:01:20.168 [Task submitter] INFO  nextflow.Session - [21/63f785] Submitted process > COUNT_READS (1)
+Apr-06 16:01:20.223 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: COUNT_READS (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/aleksandra.gulbicka/BioX/nextflow_practice/test_script/first_nf_script/first_nf_script/edu_repo/first_nf_script/work/21/63f785acc7b25918e9d2b2638ab176]
+Apr-06 16:01:20.242 [main] DEBUG nextflow.Session - Session await > all process finished
+Apr-06 16:01:20.246 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-06 16:01:20.259 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=27ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-06 16:01:20.465 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Apr-06 16:01:20.474 [main] DEBUG nextflow.util.SpuriousDeps - AWS S3 uploader shutdown
+Apr-06 16:01:20.524 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
